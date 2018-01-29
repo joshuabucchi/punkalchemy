@@ -1,0 +1,50 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww18060\viewh14220\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Enonc\'e9
+\b0  : Contr\'f4le gestuel de synth\'e8se crois\'e9e \
+\
+
+\b Description
+\b0  : Ce programme aura pour fonction de r\'e9aliser un objet de synth\'e8se crois\'e9e dont les param\'e8tres seront modulables \'e0 l\'92aide d\'92une leap motion. La synth\'e8se se fera entre des sons instrumentaux et une banque d\'92oscillateurs r\'e9alis\'e9s dans 
+\i max 
+\i0 et qui ont pour fonction de cr\'e9er des battement dans les fr\'e9quences extr\'eames graves. \
+\
+
+\b Analyse des besoins
+\b0  : \
+module de synth\'e8se : source filtre \
+contr\'f4le gestuel : contr\'f4le des oscillateurs par une main, l\'92autre main contr\'f4le les param\'e8tres de la synth\'e8se crois\'e9e \
+\
+
+\b Acquisition de connaissances
+\b0  :\
+Recherches sur modes de programmation en max et python: \
+-synth\'e8se crois\'e9e \
+-oscillateurs et battements \
+-protocoles de connection de leap motion \
+ref:\
+http://www.augmented-instruments.net/_media/pyo_as_python_dsp_toolbox.pdf\
+https://api.leapmotion.com/libraries?q=python\
+\
+\
+
+\b Mod\'e8le
+\b0  : \
+\
+Une synth\'e8se crois\'e9e filtre un premier son en y appliquant l\'92enveloppe spectrale d\'92un second. \
+\
+Un contr\'f4leur gestuel d\'e9tecte une s\'e9rie de mouvement via des capteurs et transmet les donn\'e9es \'e0 un logiciel via un protocole de communication. \
+\
+
+\b M\'e9thodes
+\b0  : \
+Le signal issu d\'92une banque d\'92oscillateurs, dont les fr\'e9quences sont issus de l\'92analyse de son instrumental via des descripteurs audio, est crois\'e9e au son instrumental selon l\'92analyse du le spectre de l\'92instrument. \
+Les param\'e8tres de contr\'f4le du module de synth\'e8se peuvent \'eatre modifi\'e9s par le contr\'f4leur gestuel qui permet aussi de modifier le nombre d\'92oscillateurs et leur intensit\'e9.   \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Il s\'92agira de limiter la consommation de CPU en choisissant l\'92environnement de programmation le plus adapt\'e9 ou en r\'e9partissant les taches sur plusieurs environnements. \
+}
